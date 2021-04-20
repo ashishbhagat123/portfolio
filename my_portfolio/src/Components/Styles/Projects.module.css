@@ -1,0 +1,134 @@
+.container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+    width: 80%;
+    min-width: 20px;
+    margin: 4% auto;
+    padding: 4% 0;
+    background: rgba( 255, 255, 255, 0.05 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 0.0px );
+    -webkit-backdrop-filter: blur( 0.0px );
+    border-radius: 10px;
+}
+.card{
+    width: 30%;
+    min-width: 300px;
+    height: 600px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    margin: 2% .1%;
+    border-radius: 6%;
+    background: rgba( 228, 242, 246, 0.50 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 17.5px );
+    -webkit-backdrop-filter: blur( 17.5px );
+    border-radius: 10px;
+}
+.card > div{
+    height: 70%;
+}
+.card > div > img{
+    width: 100%;
+    height: 150%;
+}
+.card:hover .image{
+    filter: grayscale(100%);
+    filter: blur(3px);
+}
+.bottom_div{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    /* transform: translateY(30%); */
+
+    transition: .5s;
+    background: white;
+    z-index: 1;
+}
+.buttons{
+    position: absolute;
+    top: 15%;
+    text-align: left;
+    left: 38%;
+    transition: 0s;
+    opacity: 0;
+}
+.buttons button{
+    width: 10vw;
+    height: 6vh;
+    margin: 2%;
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 17.5px );
+    -webkit-backdrop-filter: blur( 17.5px );
+    border-radius: 10px;
+    border: none;
+    font-size: 18px;
+}
+.buttons button:nth-child(1){
+    background: rgba( 129, 0, 0, 0.60 );
+}
+.buttons button:nth-child(2){
+    background: rgba( 25, 67, 80, 0.60 );
+}
+.buttons button:hover{
+    filter: brightness(3);
+    font-weight: 600;
+}
+
+.card:hover .bottom_div{
+    transform: translateY(-35%);
+    transition: .5s;
+}
+.card:hover .buttons{
+    opacity: 1;
+    transition-delay: .5s;
+}
+.tech{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.tech img{
+    width: 35px;
+    margin: 0 2%;
+}
+@media only screen and (max-width: 768px) {
+    .container{
+        flex-direction: column;
+        background: none;
+        box-shadow: none;
+    }
+    .buttons{
+        left:30%;
+    }
+    .buttons button{
+        width: 30vw;
+    }
+    .card{
+        height: 430px;
+    }
+    .mobile{
+        font-size: 35px!important;
+    }
+}
+@media only screen and (max-width: 1024px){
+    .container{
+        flex-direction: row;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+}
+
+@media only screen and (min-width: 1025px){
+    .card{
+        height: 440px;
+    }
+    .buttons{
+        left: 28%;
+    }
+}

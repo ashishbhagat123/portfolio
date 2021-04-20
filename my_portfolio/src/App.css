@@ -1,5 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Patrick+Hand&family=Roboto&display=swap');
 .App {
   text-align: center;
+  font-family: 'Patrick Hand', cursive;
+  letter-spacing:4px;
+}
+
+.mode{
+  position: relative;
 }
 
 .App-logo {

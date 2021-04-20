@@ -1,0 +1,107 @@
+@media only screen and (max-width: 768px){
+    .main{
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 500;
+        transform: translateY(-100%);
+        transition: .5s;
+        font-weight: 800;
+        background: #00303f;
+    }
+    .bar{
+        width: 99%;
+        padding: 2% 0;
+        position: fixed;
+        z-index: 800;
+        text-align: end;
+        background: black;
+    }
+    .bar svg{
+        margin-right: 10%;
+        font-size: 25px;
+        margin-top: 2%;
+    }
+    .cross{
+        width: fit-content;
+    }
+    .active{
+        color: brown;
+    }
+    .cross:hover{
+        background: black;
+        color: maroon;
+    }
+    .mode svg{
+        font-size: 35px;
+    }
+
+    .visible{
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;   
+        padding-top: 1%; 
+        z-index: 1000;
+        transform: translateY(0);
+        transition: .5s;
+        background: #00303f!important;
+        color: white!important;
+    }
+    .main div, .visible div{
+        padding: 4% 0;
+        width: 100%;
+        min-width: 20px;
+        text-align: center;
+    }
+    .main div:hover{
+        background: darkblue;
+    }
+}
+
+@media only screen and (min-width: 769px){
+    body{
+        position: relative;
+        min-height: 200px;
+    }
+.main, .visible{
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    width: 100%;
+    padding: 2% 0;
+    background: transparent;
+    min-width: 20px;
+    min-height: 10px;
+    position: fixed;
+    top: 0;
+    z-index: 20;
+    font-weight: 990;
+    font-size: 20px;
+}
+.cross{
+    display: none;
+}
+.bar{
+    display: none;
+}
+.main div, .visible div{
+    margin: 0 2%;
+    cursor: pointer;
+}
+.main div:hover, .visible div:hover{
+    transform: scale(1.1);
+    transition: .5s;
+}
+}

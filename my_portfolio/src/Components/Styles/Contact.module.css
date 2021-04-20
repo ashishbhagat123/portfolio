@@ -1,0 +1,87 @@
+.main{
+    width: 100%;
+    color: white;
+    margin-top: 6%;
+    padding: 2% 0;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 80%;
+    min-width: 20px;
+    margin: 0 auto;
+}
+.mail{
+    text-align: left;
+    width: 50%;
+    padding: 5%;
+    background: rgba(5, 5, 5, .7);
+    color: white;
+    background: rgba( 255, 255, 255, 0.05 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 0.0px );
+    -webkit-backdrop-filter: blur( 0.0px );
+    border-radius: 10px;
+}
+.contact_form > div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+input{  
+    padding: 3%;
+    border-radius: 4%;
+    width: 80%;
+}
+textarea{
+    width: 85%;
+    min-height: 60px;
+}
+.contact{
+    width: 50%;
+    text-align: left;
+    margin-left: 20%;
+    height: 100%;
+    background: rgba( 255, 255, 255, 0.05 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 0.0px );
+    -webkit-backdrop-filter: blur( 0.0px );
+    border-radius: 10px;
+    padding: 12% 0;
+    padding-left: 6%;
+    color: white;
+}
+.submit{
+    width: 20%;
+    float: right;
+    padding: 3%;
+    height: fit-content;
+    margin-right: 13%;
+    display: block;
+    margin-top: 4%;
+    border-radius: 5%;
+}
+
+@media only screen and (max-width:780px){
+    .container{
+        flex-direction: column;
+    }
+    .mail{
+        width: 100%;
+        text-align: center;
+        margin-bottom: 5%;
+    }
+    .submit{
+        float: none;
+        text-align: center;
+        width: 88%;
+        min-width: 20px;
+        margin: 5% auto;
+    }
+    .contact{
+        width: 100%;
+        text-align: center;
+        margin: 0;
+    }
+}
