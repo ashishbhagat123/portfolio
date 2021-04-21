@@ -17,7 +17,7 @@
 .card{
     width: 30%;
     min-width: 300px;
-    height: 600px;
+    height: 500px;
     overflow: hidden;
     position: relative;
     cursor: pointer;
@@ -110,7 +110,7 @@
         width: 30vw;
     }
     .card{
-        height: 430px;
+        height: 400px!important;
     }
     .mobile{
         font-size: 35px!important;
@@ -122,11 +122,20 @@
         justify-content: space-evenly;
         flex-wrap: wrap;
     }
+    .card{
+        height: 420px;
+    }
+    .buttons{
+        left: 32%;
+    }
+    .buttons button{
+        height: 30px;
+    }
 }
 
 @media only screen and (min-width: 1025px){
     .card{
-        height: 440px;
+        height: 400px;
     }
     .buttons{
         left: 28%;

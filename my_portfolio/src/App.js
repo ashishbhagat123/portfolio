@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react';
+import React, { useState } from 'react';
 import './App.css';
 import { LandingPage } from './Components/LandingPage';
 import { Navbar } from './Components/Navbar';

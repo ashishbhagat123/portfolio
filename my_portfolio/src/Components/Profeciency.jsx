@@ -1,12 +1,23 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styles from "./Styles/Profeciency.module.css";
 import front_end from "./Images/frontend.png";
 import back_end from "./Images/backend.png";
 import data from "./Images/data.png";
+import aos from "aos"
+import "aos/dist/aos.css"
+
+
+
 
 const Profeciency = () => {
+
+    useEffect(() => {
+        aos.init({duration:1000})
+      }, []);
+      
+
     return (
-        <>
+        <div data-aos = "fade-in">
             <h1
                 id="proficiency"
                 className={styles.mobile}
@@ -14,7 +25,8 @@ const Profeciency = () => {
             >
                 My Proficiency
             </h1>
-            <div className={styles.container}>
+            <div 
+            className={styles.container}>
                 <div>
                     <img src={front_end} alt="frontEnd" />
                     <h4>Front End</h4>
@@ -31,7 +43,7 @@ const Profeciency = () => {
                     <p>Stacks, Arrays, Queues.</p>
                 </div>
             </div>
-        </>
+        </div>
     );
 };
 

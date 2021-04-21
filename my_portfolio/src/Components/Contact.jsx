@@ -2,8 +2,6 @@ import React from "react";
 import styles from "./Styles/Contact.module.css";
 import emailjs from "emailjs-com";
 
-// import './ContactUs.css';
-
 const ContactUs = ({ mode}) => {
     const sendEmail = (e) => {
         e.preventDefault();
@@ -75,7 +73,7 @@ const ContactUs = ({ mode}) => {
                     </div>
                     <div>
                         <h2>Phone</h2>
-                        <p>7204183942</p>
+                        <p>+917204183942</p>
                     </div>
                 </div>
             </div>

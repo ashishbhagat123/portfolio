@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import styles from "./Styles/Navbar.module.css";
 import { FaBars } from "react-icons/fa";
 import { ImCross } from "react-icons/im";

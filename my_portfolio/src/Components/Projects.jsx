@@ -1,14 +1,17 @@
-import React from "react";
+import React, { useEffect} from "react";
 import styles from "./Styles/Projects.module.css";
 import css from "./Images/css.svg";
 import react from "./Images/react.svg";
 import javascript from "./Images/javascript.svg";
-import github from "./Images/github.svg";
 import material from "./Images/material-ui.svg";
 import hindu from "./Images/hindu.png";
 import looseIt from "./Images/looseIt.jpeg";
 import buffer from "./Images/buffer.png";
 import html from "./Images/html.svg";
+import aos from "aos"
+import "aos/dist/aos.css"
+
+
 
 const project = [
     {
@@ -36,8 +39,12 @@ const project = [
 
 const Projects = ({ mode }) => {
 
+
+        useEffect(() => {
+          aos.init({duration:2000})
+        }, []);
+
     const handleGit = (e) => {
-        console.log("working")
         window.location.href = e
     }
 
@@ -46,7 +53,9 @@ const Projects = ({ mode }) => {
     }
 
     return (
-        <div id="projects">
+        <div id="projects"
+        data-aos = "fade-in"
+        >
             <h1 className = {styles.mobile} style = {{fontSize: "60px"}}>My Projects</h1>
             <div className={styles.container}>
                 {project.map((e) => (
@@ -85,7 +94,6 @@ const Projects = ({ mode }) => {
                                     <div className={styles.tech}>
                                         {e.tech.map((image) => (
                                             <>
-                                                {console.log(image)}
                                                 <img src={image} alt={image} />
                                             </>
                                         ))}

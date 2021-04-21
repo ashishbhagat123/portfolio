@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styles from "./Styles/TechStack.module.css";
 import css from "./Images/css.svg";
 import react from "./Images/react.svg";
@@ -7,11 +7,19 @@ import github from "./Images/github.svg";
 import mongo from "./Images/mongodb.svg";
 import material from "./Images/material-ui.svg";
 import nodejs from "./Images/nodejs.svg";
+import aos from "aos"
+import "aos/dist/aos.css"
 
 const TechStack = ({ mode }) => {
+
+    useEffect(() => {
+      aos.init({duration:1000})
+    }, []);
+    
     return (
         <>
             <div
+                data-aos = "fade-in"
                 id = "tech-stack"
                 style={
                     mode === "dark"
