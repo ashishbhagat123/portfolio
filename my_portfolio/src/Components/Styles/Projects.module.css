@@ -17,7 +17,7 @@
 .card{
     width: 30%;
     min-width: 300px;
-    height: 500px;
+    height: 520px;
     overflow: hidden;
     position: relative;
     cursor: pointer;
@@ -30,7 +30,7 @@
     border-radius: 10px;
 }
 .card > div{
-    height: 70%;
+    height: 63%;
 }
 .card > div > img{
     width: 100%;
@@ -52,7 +52,7 @@
 }
 .buttons{
     position: absolute;
-    top: 15%;
+    top: 10%;
     text-align: left;
     left: 38%;
     transition: 0s;
@@ -88,6 +88,15 @@
     opacity: 1;
     transition-delay: .5s;
 }
+.about_tag{
+    opacity: 0;
+}
+.tech_stack{
+    opacity: 0;
+}
+.card:hover .tech_stack{
+    opacity: 1;
+}
 .tech{
     display: flex;
     align-items: center;
@@ -105,12 +114,13 @@
     }
     .buttons{
         left:30%;
+        top: 15%;
     }
     .buttons button{
-        width: 30vw;
+        width: 32vw;
     }
     .card{
-        height: 400px!important;
+        height: 430px!important;
     }
     .mobile{
         font-size: 35px!important;

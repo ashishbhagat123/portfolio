@@ -12,7 +12,7 @@ import "aos/dist/aos.css"
 const Profeciency = () => {
 
     useEffect(() => {
-        aos.init({duration:1000})
+        aos.init({duration:1600})
       }, []);
       
 

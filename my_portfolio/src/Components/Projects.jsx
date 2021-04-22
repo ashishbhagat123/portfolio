@@ -16,21 +16,23 @@ import "aos/dist/aos.css"
 const project = [
     {
         title: "The Hindu clone",
-        about: "something about project",
-        git: "https://github.com/Jammy12345/Team-Butane-THE-HINDU",
+        about: "Web app where user can read news from politics, sports and other sections.",
+        demo: "https://the-hindu-1w79mgmmr-ashishbhagat123.vercel.app/",
         img: hindu,
         tech: [html, css, react, material],
     },
     {
         title: "Loose It clone",
-        about: "something about project",
+        about: "Web app used to keep a track of calorie count and helps user to loose weight.",
+        demo: "https://looseit.netlify.app",
         git: "https://github.com/lokeshnimje/Silicon",
         img: looseIt,
         tech: [html, css, javascript],
     },
     {
         title: "Buffer.com clone",
-        about: "something about project",
+        about: "A simple responsive static website.",
+        demo: "https://bufferclone.netlify.app",
         git: "https://github.com/Rakesh-Thampy/buffer_project",
         img: buffer,
         tech: [html, css, javascript],
@@ -41,15 +43,15 @@ const Projects = ({ mode }) => {
 
 
         useEffect(() => {
-          aos.init({duration:2000})
+          aos.init({duration:1000})
         }, []);
 
     const handleGit = (e) => {
         window.location.href = e
     }
 
-    const handleDrive = () => {
-
+    const handleDrive = (e) => {
+        window.location.href = e
     }
 
     return (
@@ -70,7 +72,7 @@ const Projects = ({ mode }) => {
                             </div>
                             <div className={styles.buttons}>
                                 <button onClick = {() => handleGit(e.git)}>GitHub</button>
-                                <button>Demo</button>
+                                <button onClick = {() => handleDrive(e.demo)}>Demo</button>
                             </div>
                             <div
                                 className={styles.bottom_div}
@@ -90,7 +92,7 @@ const Projects = ({ mode }) => {
                                 <h1>{e.title}</h1>
                                 <div>
                                     <p>{e.about}</p>
-                                    <h3>Tech Stack: </h3>
+                                    <h3 className = {styles.tech_stack}>Tech Stack: </h3>
                                     <div className={styles.tech}>
                                         {e.tech.map((image) => (
                                             <>

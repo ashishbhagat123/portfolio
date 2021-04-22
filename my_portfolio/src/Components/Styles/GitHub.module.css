@@ -12,6 +12,9 @@
 .container img{
     width: 100%;
 }
+.git{
+    width: 1500px!important;
+}
 
 @media only screen and (max-width:768px){
     .mobile{

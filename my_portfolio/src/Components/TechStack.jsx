@@ -13,7 +13,7 @@ import "aos/dist/aos.css"
 const TechStack = ({ mode }) => {
 
     useEffect(() => {
-      aos.init({duration:1000})
+      aos.init({duration:1600})
     }, []);
     
     return (

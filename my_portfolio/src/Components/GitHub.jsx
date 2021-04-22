@@ -4,17 +4,18 @@ import dark from "./Images/dark_git.png"
 import light from "./Images/light_git.png"
 import aos from "aos"
 import "aos/dist/aos.css"
-
     
 const GitHub = ({mode}) => {
 
     useEffect(() => {
-        aos.init({duration:1000})
+        aos.init({duration:1600})
       }, []);
+
+    
 
     return (
         <div data-aos = "fade-in">
-        <h1 className = {styles.mobile} style = {{fontSize: "60px"}}>GitHub</h1>
+        <h1 className = {styles.mobile} style = {{fontSize: "60px"}}>My GitHub</h1>
             <div className = {styles.container}>
                 <img src= {mode === "dark"? dark: light} alt="github"/>
             </div>
