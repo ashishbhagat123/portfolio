@@ -2,15 +2,23 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    width: 80%;
+    width: 100%;
     min-width: 20px;
-    margin: 4% auto;
-    padding: 4% 0;
+    margin: 1% auto;
+}
+.container h1{
+    margin: 0!important;
+}
+.container > div{
+    margin: 2%;
     background: rgba( 255, 255, 255, 0.05 );
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    box-shadow: 0 8px 34px 0 rgba(25, 16, 35, .4);
     backdrop-filter: blur( 0.0px );
     -webkit-backdrop-filter: blur( 0.0px );
     border-radius: 10px;
+    padding: 2% 0;
+    min-width: 28vw;
+    min-height: 320px;
 }
 .container img:hover{
     transform: scale(1.1);
@@ -27,6 +35,11 @@
 @media only screen and (max-width: 768px) {
     .container{
         flex-direction: column;
+    }
+    .container div{
+        min-width: 90%;
+        min-height: fit-content;
+        margin-bottom: 5%;
     }
     .mobile{
         font-size: 35px!important;

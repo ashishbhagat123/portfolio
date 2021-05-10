@@ -4,7 +4,7 @@ import { LandingPage } from './Components/LandingPage';
 import { Navbar } from './Components/Navbar';
 
 function App() {
-  const [mode, setMode] = useState("dark");
+  const [mode, setMode] = useState("light");
   
   const handleClick = () => {
     setMode(mode === "dark"? "light": "dark" )

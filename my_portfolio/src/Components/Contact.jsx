@@ -1,8 +1,23 @@
 import React from "react";
 import styles from "./Styles/Contact.module.css";
 import emailjs from "emailjs-com";
+import { FaLinkedin, FaGithubSquare } from "react-icons/fa";
 
 const ContactUs = ({ mode}) => {
+
+    const handleLinkedIn = () => {
+        window.open("https://www.linkedin.com/in/ashish-bhagat-3b2bb1142/")
+            
+    };
+
+    const handleGit = () => {
+        window.open("https://github.com/ashishbhagat123")
+    };
+
+    const handleResume = () => {
+        window.open("https://drive.google.com/file/d/1I7sHfYzTTmZsXV9upUlUmSlDAmFUawRJ/view?usp=sharing")
+    };
+
     const sendEmail = (e) => {
         e.preventDefault();
 
@@ -21,6 +36,7 @@ const ContactUs = ({ mode}) => {
                     console.log(error.text);
                 }
             );
+            e.target.reset()
     };
 
     return (
@@ -37,13 +53,14 @@ const ContactUs = ({ mode}) => {
                 <div className={styles.mail}>
                     <form className={styles.contact_form} onSubmit={sendEmail}>
                         <div>
-                            <h1>Contact Me</h1>
+                            <h1>Get In Touch</h1>
                             <div>
                                 <p>Name</p>
                                 <input
                                     placeholder="name"
                                     type="text"
                                     name="name"
+                                    autoComplete = "off"
                                 />
                             </div>
                             <div>
@@ -52,12 +69,13 @@ const ContactUs = ({ mode}) => {
                                     placeholder="email"
                                     type="email"
                                     name="email"
+                                    autoComplete = "off"
                                 />
                             </div>
                         </div>
 
                         <p>Message</p>
-                        <textarea name="message" />
+                        <textarea name="message" autoComplete = "off"/>
                         <input
                             className={styles.submit}
                             type="submit"
@@ -69,11 +87,24 @@ const ContactUs = ({ mode}) => {
                     <h1>Ashish Bhagat</h1>
                     <div>
                         <h2>Address</h2>
-                        <p>Verdant appartments, Bangalore</p>
+                        <p>Bangalore, India</p>
                     </div>
-                    <div>
-                        <h2>Phone</h2>
-                        <p>+917204183942</p>
+                    <div className = {styles.flex}>
+                        <div>
+                                <FaLinkedin
+                                    onClick={handleLinkedIn}
+                                    color="#2867B2"
+                                    cursor = "Pointer"
+                                />
+                        </div>
+                        <div>
+                                <FaGithubSquare
+                                    onClick={handleGit}
+                                    color="#184d47"
+                                    cursor = "Pointer"
+                                />
+                        </div>
+                        <button onClick={handleResume}>Resume</button>
                     </div>
                 </div>
             </div>

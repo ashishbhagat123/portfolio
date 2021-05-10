@@ -49,7 +49,7 @@ const Navbar = ({ mode, handleClick }) => {
             >
                 <div>
                     <Link
-                        activeClass="active"
+                        activeClass= {styles.active}
                         to="home"
                         spy={true}
                         smooth={true}
@@ -59,7 +59,7 @@ const Navbar = ({ mode, handleClick }) => {
                 </div>
                 <div>
                     <Link
-                        activeClass="active"
+                        activeClass= {styles.active}
                         to="tech-stack"
                         spy={true}
                         smooth={true}
@@ -69,7 +69,7 @@ const Navbar = ({ mode, handleClick }) => {
                 </div>
                 <div>
                     <Link
-                        activeClass="active"
+                        activeClass= {styles.active}
                         to="proficiency"
                         spy={true}
                         smooth={true}
@@ -89,7 +89,7 @@ const Navbar = ({ mode, handleClick }) => {
                 </div>
                 <div>
                     <Link
-                        activeClass="active"
+                        activeClass= {styles.active}
                         to="contact"
                         spy={true}
                         smooth={true}

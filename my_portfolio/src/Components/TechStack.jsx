@@ -9,27 +9,15 @@ import material from "./Images/material-ui.svg";
 import nodejs from "./Images/nodejs.svg";
 import aos from "aos"
 import "aos/dist/aos.css"
+import {Fade, Flip} from 'react-reveal';
+
 
 const TechStack = ({ mode }) => {
-
-    useEffect(() => {
-      aos.init({duration:1600})
-    }, []);
     
     return (
         <>
             <div
-                data-aos = "fade-in"
                 id = "tech-stack"
-                style={
-                    mode === "dark"
-                        ? {
-                              background:
-                                  "linear-gradient(to right, #0f2027, #203a43, #2c5364)",
-                              color: "white",
-                          }
-                        : { background: "white", color: "black" }
-                }
             >
                 <h1 className = {styles.mobile} style = {{fontSize: "60px"}}>Tech Stack</h1>
                 <div className={styles.flex}>

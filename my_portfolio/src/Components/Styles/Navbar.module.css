@@ -16,7 +16,7 @@
         background: #00303f;
     }
     .bar{
-        width: 99%;
+        width: 100%;
         padding: 2% 0;
         position: fixed;
         z-index: 800;
@@ -32,10 +32,9 @@
         width: fit-content;
     }
     .active{
-        color: brown;
+        color: #046582;
     }
     .cross:hover{
-        background: black;
         color: maroon;
     }
     .mode svg{
@@ -65,9 +64,6 @@
         min-width: 20px;
         text-align: center;
     }
-    .main div:hover{
-        background: darkblue;
-    }
 }
 
 @media only screen and (min-width: 769px){
@@ -93,6 +89,10 @@
 .cross{
     display: none;
 }
+.active{
+color: #046582;
+}
+
 .bar{
     display: none;
 }

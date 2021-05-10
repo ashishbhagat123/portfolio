@@ -36,8 +36,10 @@ button{
 }
 .about h2{
     font-size: 3rem;
+    margin-bottom: 0;
 }
 .about > h1{
+    margin-top: 0;
     color: #b83b5e;
     font-size: 2rem;
 }

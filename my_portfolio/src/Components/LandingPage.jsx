@@ -7,20 +7,20 @@ import { Projects } from "./Projects";
 import GitHub from "./GitHub";
 import Profeciency from "./Profeciency";
 import ContactUs from "./Contact";
+import Roll from 'react-reveal/Roll';
 
 const LandingPage = ({ mode }) => {
     const handleLinkedIn = () => {
-        window.location.href =
-            "https://www.linkedin.com/in/ashish-bhagat-3b2bb1142/";
+        window.open("https://www.linkedin.com/in/ashish-bhagat-3b2bb1142/")
+            
     };
 
     const handleGit = () => {
-        window.location.href = "https://github.com/ashishbhagat123";
+        window.open("https://github.com/ashishbhagat123")
     };
 
     const handleResume = () => {
-        window.location.href =
-            "https://drive.google.com/file/d/1I7sHfYzTTmZsXV9upUlUmSlDAmFUawRJ/view?usp=sharing";
+        window.open("https://drive.google.com/file/d/1I7sHfYzTTmZsXV9upUlUmSlDAmFUawRJ/view?usp=sharing")
     };
 
     return (
@@ -41,8 +41,21 @@ const LandingPage = ({ mode }) => {
                 }
             >
                 <div className={styles.about}>
-                    <h2>Hello, I'M ASHISH BHAGAT</h2>
-                    <h1>Full Stack Developer</h1>
+                    <h2>
+                   
+                        Hello, I'M 
+                        <span style = {{color: "#046582"}}>
+                        <Roll left cascade>
+                        
+                        ASHISH BHAGAT
+                    </Roll>
+                    </span>
+                    </h2>
+                    <h1>
+                    <Roll right cascade>
+                        Full Stack Developer
+                    </Roll>
+                        </h1>
                     <p>
                         A passionate aspiring Full Stack Developer skilled in
                         MERN stack, moulded and shaped by Masai School's
@@ -56,12 +69,14 @@ const LandingPage = ({ mode }) => {
                             <FaLinkedin
                                 onClick={handleLinkedIn}
                                 color="#2867B2"
+                                cursor = "Pointer"
                             />
                         </div>
                         <div>
                             <FaGithubSquare
                                 onClick={handleGit}
                                 color="#184d47"
+                                cursor = "Pointer"
                             />
                         </div>
                         <button onClick={handleResume}>Resume</button>

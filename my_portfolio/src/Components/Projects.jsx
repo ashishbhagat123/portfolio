@@ -8,8 +8,6 @@ import hindu from "./Images/hindu.png";
 import looseIt from "./Images/looseIt.jpeg";
 import buffer from "./Images/buffer.png";
 import html from "./Images/html.svg";
-import aos from "aos"
-import "aos/dist/aos.css"
 
 
 
@@ -18,6 +16,7 @@ const project = [
         title: "The Hindu clone",
         about: "Web app where user can read news from politics, sports and other sections.",
         demo: "https://the-hindu-1w79mgmmr-ashishbhagat123.vercel.app/",
+        git: "https://github.com/Rakesh-Thampy/buffer_project",
         img: hindu,
         tech: [html, css, react, material],
     },
@@ -41,22 +40,16 @@ const project = [
 
 const Projects = ({ mode }) => {
 
-
-        useEffect(() => {
-          aos.init({duration:1000})
-        }, []);
-
     const handleGit = (e) => {
-        window.location.href = e
+        window.open(e)
     }
 
     const handleDrive = (e) => {
-        window.location.href = e
+        window.open(e)
     }
 
     return (
         <div id="projects"
-        data-aos = "fade-in"
         >
             <h1 className = {styles.mobile} style = {{fontSize: "60px"}}>My Projects</h1>
             <div className={styles.container}>
