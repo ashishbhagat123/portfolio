@@ -74,7 +74,7 @@ const Navbar = ({ mode, handleClick }) => {
                         spy={true}
                         smooth={true}
                     >
-                        PROFIENCY
+                        PROFICIENCY
                     </Link>
                 </div>
                 <div>

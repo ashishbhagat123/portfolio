@@ -5,10 +5,11 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    padding-bottom: 10%;
-    height: 65vh;
+    padding-bottom: 5%;
+    height: fit-content;
+    min-height: 62vh;
 	background-size: 400% 400%;
-	animation: gradient 15s ease infinite;
+	animation: gradient 40s ease infinite;
     object-fit: cover;
     margin-bottom: 4%;
 }
@@ -35,7 +36,7 @@ button{
     line-height: 1.5;
 }
 .about h2{
-    font-size: 3rem;
+    font-size: 2.5rem;
     margin-bottom: 0;
 }
 .about > h1{
@@ -44,7 +45,7 @@ button{
     font-size: 2rem;
 }
 .about p{
-    font-size: 1.5rem;
+    font-size: 1.4rem;
 }
 .about div{
     display: flex;
@@ -115,7 +116,7 @@ button{
     .container{
         flex-direction: column;
         width: 99.6%;
-        height: 100vh;
+        padding-top: 16%;
     }
     .about{
         text-align: center;

@@ -4,7 +4,6 @@ import my_pic from "./Images/my_pic.jpg";
 import { FaLinkedin, FaGithubSquare } from "react-icons/fa";
 import { TechStack } from "./TechStack";
 import { Projects } from "./Projects";
-import GitHub from "./GitHub";
 import Profeciency from "./Profeciency";
 import ContactUs from "./Contact";
 import Roll from 'react-reveal/Roll';
@@ -32,11 +31,11 @@ const LandingPage = ({ mode }) => {
                     mode === "dark"
                         ? {
                               backgroundImage:
-                                  "linear-gradient(-45deg,#151515, #6b011f,#126e82, #114e60)",
+                                  "linear-gradient(-45deg,#151515, #222831,#0f0f0f, #114e60)",
                           }
                         : {
                               backgroundImage:
-                                  "linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab)",
+                                  "linear-gradient(-45deg, #00adb5, #29bb89, #1cc5dc, #2978b5)",
                           }
                 }
             >
@@ -91,7 +90,6 @@ const LandingPage = ({ mode }) => {
             <TechStack mode={mode} />
             <Profeciency mode={mode} />
             <Projects mode={mode} />
-            <GitHub mode={mode} />
             <ContactUs mode={mode} />
         </>
     );

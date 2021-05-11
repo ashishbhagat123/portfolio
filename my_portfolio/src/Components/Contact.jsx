@@ -86,8 +86,9 @@ const ContactUs = ({ mode}) => {
                 <div className={styles.contact}>
                     <h1>Ashish Bhagat</h1>
                     <div>
-                        <h2>Address</h2>
                         <p>Bangalore, India</p>
+                        <p>+7204183942</p>
+                        <p>abhagat629@gmail.com</p>
                     </div>
                     <div className = {styles.flex}>
                         <div>
