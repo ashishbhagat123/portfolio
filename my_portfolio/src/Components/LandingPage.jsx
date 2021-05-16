@@ -19,7 +19,7 @@ const LandingPage = ({ mode }) => {
     };
 
     const handleResume = () => {
-        window.open("https://drive.google.com/file/d/1I7sHfYzTTmZsXV9upUlUmSlDAmFUawRJ/view?usp=sharing")
+        window.open("https://drive.google.com/file/d/1_yPdG8D3V1r38BrYtTcvahyCbyrwzclr/view?usp=sharing")
     };
 
     return (
